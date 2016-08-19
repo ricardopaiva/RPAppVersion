@@ -41,4 +41,13 @@
     return label;
 }
 
++ (BOOL)isOlderThanVersion:(NSString *)version
+{
+    NSString *actualVersion = [RPAppVersion version];
+    if ([actualVersion compare:version options:NSNumericSearch] == NSOrderedAscending) {
+        return YES;
+    }
+    return NO;
+}
+
 @end

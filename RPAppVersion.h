@@ -15,4 +15,13 @@
 + (NSString *)build;
 + (NSString *)label;
 
+/**
+ *  Simple method to compare app version with a received version.
+ *
+ *  @param version <#version description#>
+ *
+ *  @return <#return value description#>
+ */
++ (BOOL)isOlderThanVersion:(NSString *)version;
+
 @end
